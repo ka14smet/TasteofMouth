@@ -286,5 +286,5 @@ function loadDoc() {
   }
   xhttp.open("GET", "https://v1.nocodeapi.com/pvrsmg1994/google_sheets/usYBfhXiFpHjNgRO?tabId=Sheet1");
   xhttp.send();*/
-  alert("Hello");
+  alert("Thank you");
 }
