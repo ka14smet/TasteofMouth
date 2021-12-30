@@ -288,3 +288,4 @@ function loadDoc() {
   xhttp.send();*/
   alert("Thank you");
 }
+

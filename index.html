@@ -31,6 +31,22 @@
 
 <body>
 
+<div>
+<!--<h2>Callout Messages</h2>
+<p>Some content text, blabla.</p>
+<p>Some content text, blabla.</p>
+<p>Click on the "x" symbol to close the callout message.</p>-->
+<div align="left">
+<div class="callout">
+  <div class="callout-header">TasteOfMouth</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container" >
+    <img src="assets/img/event-popup.png" class="img-fluid" alt="">
+	</div>
+  </div>
+</div>
+
+
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
   
@@ -40,10 +56,10 @@
         <i class="bi bi-phone d-flex align-items-center"><span>+91 9380828492</span></i>
         <i class="bi bi-clock d-flex align-items-center ms-4"><span> MON-SUN: 8AM - 10PM</span></i>
 		 <i class="bi  d-flex align-items-center ms-4"style="margin-left: 40.5rem!important;" ><span>
-		 <a href="https://www.twitter.com/TasteofMouth" class="twitter"><i class="bx bxl-twitter" target="_top""></i></a>
-         <a href="https://www.facebook.com/TasteofMouth/ " class="facebook"><i class="bx bxl-facebook"></i></a>
-         <a href="https://www.instagram.com/taste_of_mouth/" class="instagram"><i class="bx bxl-instagram"></i></a>
-		 <a href="https://www.linkedin.com/in/tasteofmouth/ " class="linkedin"><i class="bx bxl-linkedin"></i></a></span></i>	 
+		 <a href="https://www.twitter.com/TasteofMouth/" target="_blank" class="twitter"><i class="bx bxl-twitter" ></i></a>
+         <a href="https://www.facebook.com/TasteofMouth/"  target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+         <a href="https://www.instagram.com/taste_of_mouth/"  target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+		 <a href="https://www.linkedin.com/in/tasteofmouth/"  target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a></span></i>	 
       </div>  
     </div>
   </div>
@@ -83,7 +99,7 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+          <a href="https://www.youtube.com/watch?v=rwnqvp4j1sw" class="glightbox play-btn"></a>
         </div>
       </div>
     </div>
@@ -323,34 +339,35 @@
           <p>Book your Order</p>
         </div>
     
+          <form  method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name"  id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email"  name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text"  name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number"  name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
               <div class="validate"></div>
             </div>
           </div>
           <div class="form-group mt-3">
-            <textarea name="message" rows="5" placeholder="Message"></textarea>
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
@@ -359,6 +376,7 @@
             <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
           </div>
           <div class="text-center"><button type="submit">Book Order</button></div>
+        </form>
       
 
       </div>
@@ -385,7 +403,7 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-2.jpg"class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg"  style="width: 371px;height: 205px;"  alt="" class="img-fluid">
+                <img src="assets/img/gallery/gallery-2.jpg"   alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -414,14 +432,14 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" style="width: 371px;height: 205px;" alt="" class="img-fluid">
+                <img src="assets/img/gallery/gallery-6.jpg"  alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" style="width: 371px;height: 205px;" alt="" class="img-fluid">
+                <img src="assets/img/gallery/gallery-7.jpg"  alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -483,19 +501,21 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">        
+             
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name"  id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email"  name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text"  name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea  name="message" rows="8" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -503,7 +523,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div id="#btn-sendmsg" class="text-center"><button type="submit" onclick="loadDoc()">Send Message</button></div>
-            
+            </form>
 
           </div>
 
@@ -519,10 +539,10 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-		<div class="col-lg-2 col-md-2">  <img src="assets/img/apple-touch-icon.png" alt=""></div>
+		<div class="col-lg-2 col-md-2"><img src="assets/img/apple-touch-icon.jpg" alt=""></div>
           <div class="col-lg-2 col-md-2">
             <div class="footer-info">
-              <h3><span style="color: #F6D548;">Taste</span> <span style="color: #FD6F6D;">of</span> <span style="color: #FFFEFF;">Mouth</span></h3>
+              <h3><span style="color: #FFFEFF;">Taste</span> <span style="color: #FFFEFF;">of</span> <span style="color: #FFFEFF;">Mouth</span></h3>
               <p>
                 Shubhashree Nilaya, . <br>
                Jaladharshini Layout,<br> near jain pu college Bangalore 560094<br>
@@ -530,10 +550,10 @@
                 <strong>Email:</strong> tasteofmouth21@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="http://www.twitter.com/TasteofMouth/" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="http://www.facebook.com/TasteofMouth/ " class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="http://www.instagram.com/taste_of_mouth/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="http://www.linkedin.com/in/tasteofmouth/ " class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="http://www.twitter.com/TasteofMouth/"  target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="http://www.facebook.com/TasteofMouth/ "  target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="http://www.instagram.com/taste_of_mouth/"  target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="http://www.linkedin.com/in/tasteofmouth/ "  target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>			 
           </div>
@@ -564,7 +584,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!--script src="assets/vendor/php-email-form/validate.js"></script>-->
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js">
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
+<script>
