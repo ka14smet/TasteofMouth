@@ -151,6 +151,8 @@
     }
   }, true)
 
+  
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -288,4 +290,27 @@ function loadDoc() {
   xhttp.send();*/
   alert("Thank you");
 }
+
+// const openModalButtons = document.getElementById('open')
+// const closeModalButtons = document.getElementById('close')
+// const overlay = document.getElementById('overlay')
+
+
+// openModalButtons.addEventListener('click', () => {
+	// modal.classList.add('show');
+// });
+// closeModalButtons.addEventListener('click', () => {
+	// modal.classList.remove('show');
+// });
+
+
+
+// overlay.addEventListener('click', () => {
+  // const modals = document.querySelectorAll('.modal.active')
+  // modals.forEach(modal => {
+    // closeModal(modal)
+  // })
+// })
+
+
 

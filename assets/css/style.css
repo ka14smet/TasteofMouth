@@ -121,8 +121,9 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
+	position:fixed;
   height: 50px;
-  font-size: 15px;
+  font-size: 20px;;
   transition: all 0.5s;
   z-index: 996;	
 }
@@ -130,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -40px;
 }
 #topbar .contact-info i {
-  font-style: normal;
+  font-style: small-caps;
   color: #d9ba85;
 }
 #topbar .contact-info i span {
@@ -144,6 +145,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   color: #cda45e;
+  position:fixed;
+}
+#topbar-content {
+    display: inline-flex;
 }
 #topbar .languages ul a {
   color: white;
@@ -153,10 +158,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 #topbar .languages ul li + li::before {
   display: inline-block;
-  padding-right: 25px;
+  padding-right: 15px;
   color: rgba(255, 255, 255, 0.5);
   content: "/";
 }
+@media (max-width: 600px) {
+  #topbar {
+	position:fixed;
+  height: 50px;
+  font-size: 8px;;
+  transition: all 0.5s;
+  z-index: 996;	
+}
+}
+/*------------------------------------
+
+* Mobile top-bar
+
+--------------------------------------*/
+
+
 
 /*--------------------------------------------------------------
 # Header
@@ -1526,14 +1547,27 @@ section {
   bottom: 25px;
   top:200px;
   right: 10px;
-  left:650px;
+  left:600px;
   margin-left: 20px;
   max-width: 500px;
   opacity:100;
   z-index:100;
   size:900px;
 }
-
+@media (max-width: 991px) {
+  .callout {
+      position: absolute;
+  bottom: 25px;
+  top:150px;
+  right: 10px;
+  left:5px;
+  margin-left: 20px;
+  max-width: 500px;
+  opacity:100;
+  z-index:100;
+  size:900px;
+  }
+}
 .callout-header {
   padding: 25px 15px;
   background: #555;
@@ -1561,7 +1595,7 @@ section {
 .closebtn:hover {
   color: lightgrey;
 }
-
+/* 
 .d-flex{
 	 padding: 10px 8px;
     text-decoration: none;
@@ -1569,7 +1603,70 @@ section {
     color: #555;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 8px;
     outline: none;
+
+  } */
 	
 }
+/* #modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+#modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#modal.header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+#modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#modal-body {
+  padding: 10px 15px;
+  color:white;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay-active {
+  opacity: 1;
+  pointer-events: all;
+} */
